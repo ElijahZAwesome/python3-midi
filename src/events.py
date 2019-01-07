@@ -348,7 +348,7 @@ class EndOfTrackEvent(MetaEvent):
 
 
 class SetTempoEvent(MetaEvent):
-    # __slots__ = ['bpm', 'mpqn']
+    __slots__ = ['bpm', 'mpqn']
     name = 'Set Tempo'
     metacommand = 0x51
     length = 3
